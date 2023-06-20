@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>program 3</title>
+</head>
+<style>
+    body {
+        background-image: url("https://wallpaperaccess.com/full/3078918.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    h1 {
+        color: ghostwhite;
+        font-family: cursive;
+        font-size: 70;
+        text-align: center;
+    }
+
+    .textbox1 {
+        color: rgb(237, 99, 25);
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    input[type=text],
+    select {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid;
+    }
+</style>
+
+<body>
+    <center>
+        <h1>
+           <a style="color: rgb(47, 222, 76);" >select the name of the country to find its capital</a>
+        </h1>
+        <form name="myform">
+            <a style="color: gold;">Select country</a>
+            <select name="country" id="sbox1" onClick="myFunction()" style="color:crimson;" required>
+                <option value=""></option>
+                <option value="New Delhi">INDIA</option>
+                <option value="Canberra">AUSTRALIA</option>
+                <option value="Washington D.C">AMERICA</option>
+                <option value="London">UNITED KINGDOM</option>
+                <option value="Berlin">GERMANY</option>
+            </select><br><br>
+            <a style="color: gold;">Capital</a>
+            <input type="text" class="textbook1" id="sbox2" style="color: crimson;">
+        </form>
+    </center>
+    <script>
+        function myFunction() {
+            var a = document.getElementById("sbox1").value;
+            document.getElementById("sbox2").value = a;
+
+        }
+    </script>
+</body>
+
+</html>
